@@ -1,0 +1,17 @@
+
+drop table EmployeeDetails
+CREATE TABLE [dbo].[EmployeeDetails](
+	[EmpId] [int] identity primary key,
+	[EmpName] [varchar](50) NULL,
+	[DateOfBirth] [date] NULL,
+	[EmailId] [varchar](50) NULL,
+	[Gender] [varchar](10) NULL,
+	[Address] [varchar](100) NULL,
+	[PinCode] bigint NULL
+)
+
+
+insert into EmployeeDetails (Empname,DateOfBirth,EmailId,Gender,Address,PinCode)
+values ('gem','10-08-1985','gem@yahoo.com','female','Tup',2233)
+
+select * from EmployeeDetails
